@@ -1,4 +1,8 @@
-
+//Overall, the Bully algorithm relies on a centralized coordinator for communication and elects the highest priority process as the leader. 
+//On the other hand, the Ring algorithm operates 
+//in a decentralized manner and passes the election message in a ring-like structure to elect a new leader.
+//Bully Algorithm: Election is triggered when a higher priority process fails to respond.
+//Ring Algorithm: Election is triggered by a specific process or event, such as the absence of a leader.
 import java.util.Scanner;
 public class Bully {
 

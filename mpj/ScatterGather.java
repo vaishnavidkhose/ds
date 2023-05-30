@@ -54,15 +54,15 @@ public class ScatterGather {
 
         //  Gather data from processes
         MPI.COMM_WORLD.Gather(
-            recieve_buffer,
+            recieve_buffer,//The buffer used by each process to store the data that will be sent to the root process.
+            0,//The starting index in the recieve_buffer from where the data will be sent.
+            1,// The count or number of elements to be sent from the recieve_buffer
+            MPI.INT,//data type
+            new_recieve_buffer,//The buffer on the root process that will store the received data from all processes.
             0,
             1,
             MPI.INT,
-            new_recieve_buffer,
-            0,
-            1,
-            MPI.INT,
-            root
+            root//The rank of the root process where the gathered data will be collected.
         );
 
         //  Aggregate output from all non root processes
