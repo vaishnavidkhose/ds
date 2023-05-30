@@ -2,15 +2,6 @@ import java.util.Scanner;
 
 class tokenRing {
     public static void main(String[] args) throws Throwable{    
-        System.out.println("Enter the number of processes: ");
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter n : ");
-        int n = sc.nextInt();
-        int token = 0;
-        int ch = 1;
-        int sender, reciever;
-        String message;
-        boolean message_pass = false;
         
         // Prompt for the number of processes
         System.out.println("Enter the number of processes: ");
