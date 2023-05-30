@@ -45,7 +45,7 @@ class tokenRing {
                 message_pass = false; // Set the flag to indicate that the message has been received
             }
             
-            if(message_pass) {
+            if(message_pass==true) {
                 System.out.println(token + " passing message " + message + " to " + (token + 1)%n);
             }
         }

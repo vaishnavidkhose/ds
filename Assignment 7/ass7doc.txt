@@ -1,0 +1,30 @@
+create project name : assignment7
+server:glassfish
+java ee version : ee 7
+finnish
+
+click on assignment7 add web service :MyCalculatorWebService
+click on webservice and add operations return num1+num2
+build the assignment 7
+deploy assignment 7
+right click on:MyCalculatorWebService and click test web service
+
+
+create new project : CalculatorWebServiceClient
+same above steps
+index.html
+create form windows->ide tools->pallet
+drag form : action:CalculatorServlet ->GET->ok
+take 2 input field and 1 submit button: refer image
+cliek on : CalculatorWebServiceClient the add new web service client
+browse the assignment 7 webservice file and click ok ->fininsh
+
+
+now in refernce folder youll see the refrence to the service created earlier
+right click on :CalculatorWebServiceClient add servlet : CalculatorServlet->next click the checkbox: add information to deployment->finish
+
+drag the myCalculatorWebServices to servelet
+refer image:
+
+clean and build and then click on the index.html from project 2 and right click and run file
+if required add css to index.html
